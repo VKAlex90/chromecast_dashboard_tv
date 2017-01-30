@@ -29,7 +29,7 @@ window.onload = function() {
 
     if (event.data['type'] == 'load') {
       $('#dashboard').attr('src', event.data['url']);
-      $('#loading').html("Loading "+event.data['url']);
+      $('#loading').html("Loading: "+event.data['url']);
       if (event.data['refresh'] > 0) {
         $('#dashboard').attr('data-refresh', event.data['refresh'] * 1000);
         setTimeout(reloadDashboard, $('#dashboard').attr('data-refresh'));
@@ -46,6 +46,7 @@ window.onload = function() {
 
   function reloadDashboard() {
     $('#dashboard').attr('src', $('#dashboard').attr('src'));
+    $('#loading').html("Loading: "+event.data['url']);
     if ($('#dashboard').attr('data-refresh')) {
       setTimeout(reloadDashboard, $('#dashboard').attr('data-refresh'));
     }
