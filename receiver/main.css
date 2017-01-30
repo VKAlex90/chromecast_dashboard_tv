@@ -10,7 +10,7 @@ body {
 #dashboard {
   width: 100%;
   height: 100%;
-  border: 2px solid #cfcfcf;
+  border: 0;
   /* Ensure page content loads in front of loading text to avoid partial
      rendering during transition on Chromecast. */
   z-index: 100;
