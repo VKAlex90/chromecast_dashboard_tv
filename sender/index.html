@@ -1,0 +1,34 @@
+<html>
+
+<head>
+  <title>Chromecast dashboard TV</title>
+
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <script type="text/javascript" src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+</head>
+
+<body>
+   <fieldset class="settingAndStatus">
+     <legend>Settings and Status</legend>
+   <label> Refresh  <input type="number" id="refresh" min="0" value="0"> </label> 
+    <p id="post-note" style="display: none">Status: Load TV </p>
+    </fieldset>
+
+  <div class="middle">
+    <fieldset>
+     <legend>Show Control</legend>
+    <form method="get" action="JavaScript:connect();">
+      <div> <input type="text" id="url" placeholder="enter a url for to display on dashboard TV"></div>
+      <div> <button type="submit">Show</button> </div>
+    </form>
+ <button id="stopApp" disabled>Stop</button>
+  </fieldset>
+    </div>
+  </body>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="http://underscorejs.org/underscore-min.js"></script>
+  <script src="main.js"></script>
+
+  </html>
