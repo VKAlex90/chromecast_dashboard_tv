@@ -31,7 +31,7 @@ window.onload = function() {
       $('#dashboard').attr('src', event.data['url']);
       $('#loading').html("Loading "+event.data['url']);
       if (event.data['refresh'] > 0) {
-        $('#dashboard').attr('data-refresh', event.data['refresh'] * 1000);
+        $('#dashboard').attr('data-refresh', event.data['refresh'] * 60000);
         setTimeout(reloadDashboard, $('#dashboard').attr('data-refresh'));
       }
       else {
