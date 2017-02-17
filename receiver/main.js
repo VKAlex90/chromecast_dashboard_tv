@@ -46,7 +46,7 @@ window.onload = function() {
 
   function reloadDashboard() {
     $('#dashboard').attr('src', $('#dashboard').attr('src'));
-    $('#loading').html("Loading... ");
+    $('#loading').html("Loading");
     if ($('#dashboard').attr('data-refresh')) {
       setTimeout(reloadDashboard, $('#dashboard').attr('data-refresh'));
     }
