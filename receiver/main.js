@@ -56,4 +56,4 @@ window.onload = function() {
     $('#loading').hide();
     console.log('Loading animation hidden.');
   });
-};
+}; 
